@@ -18,7 +18,7 @@
     position: relative;
 }
 
-.clock{
+.body_clock{
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -31,20 +31,21 @@
     align-items: center;
 }
 
-.clock span{
+.body_clock span{
     position: absolute;
     transform: rotate(calc(30deg *var(--i)));
     inset: 12px;
     text-align: center; 
 }
 
-.clock span b{
+.body_clock span b{
     transform: rotate(calc(-30deg * var(--i)));
     display: inline-block;
-    font-size: 20px;
+    font-size: 22.5px;
+    color: black;
 }
 
-.clock::before{
+.body_clock::before{
     content: '';
     position: absolute;
     width: 10px;
@@ -54,14 +55,14 @@
     z-index: 2;
 }
 
-.hand{
+.fork{
     position: absolute;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
-.hand i{
+.fork i{
     position: absolute;
     background-color: var(--clr);
     width: 5px;
